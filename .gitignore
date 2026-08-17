@@ -1,0 +1,32 @@
+# Python bytecode and caches
+__pycache__/
+*.py[codz]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+
+# Django
+*.log
+db.sqlite3
+db.sqlite3-journal
+staticfiles/
+media/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# IDEs
+.vscode/
+.idea/
+
+# Operating systems
+.DS_Store
+Thumbs.db
