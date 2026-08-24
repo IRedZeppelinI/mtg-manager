@@ -2,8 +2,8 @@
 
 ## Módulos
 
-- [ ] 0 — Diagnóstico e preparação
-- [ ] 1 — Setup e anatomia do Django
+- [x] 0 — Diagnóstico e preparação
+- [x] 1 — Setup e anatomia do Django
 - [ ] 2 — Models, migrations e ORM
 - [ ] 3 — Views, templates e forms
 - [ ] 4 — Autenticação e coleção
