@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Cards — MTG Manager{% endblock %}
+
+{% block content %}
+    <h1>Cards</h1>
+    <p>
+        <a href="{% url 'cards:create' %}">Add card</a>
+    </p>
+
+    <p>{{ cards|length }} card{{ cards|length|pluralize }}</p>
+
+    {% if cards %}
+        <ul>
+            {% for card in cards %}
+                <li>{{ card.name }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No cards have been registered.</p>
+    {% endif %}
+{% endblock %}

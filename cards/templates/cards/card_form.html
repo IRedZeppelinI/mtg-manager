@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Add card — MTG Manager{% endblock %}
+
+{% block content %}
+    <h1>Add card</h1>
+
+    <form method="post">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit">Save</button>
+    </form>
+
+    <p>
+        <a href="{% url 'cards:list' %}">Back to cards</a>
+    </p>
+{% endblock %}
